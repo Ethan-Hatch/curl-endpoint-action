@@ -1,0 +1,15 @@
+name: 'curl-POST-endpoint'
+description: 'Send data to webhook endpoint via curl POST request'
+inputs: 
+  url: #webhook endpoint
+    description: 'url that will recieve the POST request'
+    required: true
+  json: #json data
+    description: 'convert json to string'
+    required: true
+outputs:
+  endpoint-data: # the finalized product
+    description: 'This should match what was sent to the webhook endpoint'
+runs:
+  using: 'node16'
+  main: 'index.js'
