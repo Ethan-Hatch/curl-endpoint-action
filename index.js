@@ -15,7 +15,7 @@ try {
             'dataType' : 'json',
             'content-type' : 'application/json'
         },
-        method: postMessage,
+        method: 'POST',
         redirect: 'follow'
     })
     .then(response => {
