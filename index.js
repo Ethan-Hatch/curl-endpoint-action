@@ -17,7 +17,7 @@ try {
         headers: {
             'dataType' : 'json',
             'content-type' : 'application/json',
-            'authorization' : 'Bearer ${token}'
+            'authorization' : 'Bearer ' + token
         },
         method: 'POST',
         redirect: 'follow'
