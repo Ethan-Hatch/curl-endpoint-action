@@ -7,8 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Action
-        uses: Ethan-Hatch/curl-endpoint-action@v1.26
+        uses: Ethan-Hatch/curl-endpoint-action@v1.27
         with:
           url: https://chat.googleapis.com/v1/spaces/AAAAf5ZWj-Y/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ZfFM1RWBhqigMnYrPZIKpO0vT2K9h2m40AeL5qWwWHQ%3D
           json: 'Hello'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 #           ${{toJson(github.event.commits[0].author.email)}}
