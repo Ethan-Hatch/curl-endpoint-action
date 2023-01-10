@@ -7,6 +7,9 @@ inputs:
   json: #json data
     description: 'convert json to string'
     required: true
+  github_token: #github token
+    description: 'Github token acting as OAuth2 for fetch'
+    required: true
 outputs:
   endpoint-data: # the finalized product
     description: 'This should match what was sent to the webhook endpoint'

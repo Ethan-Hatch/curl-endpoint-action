@@ -9,11 +9,15 @@ try {
     var newJson = core.getInput('json');
     console.log('JSON data: ' + newJson);
 
+    var token = core.getInput('github_token');
+    console.log('Token:' + token);
+
     fetch (newUrl, {
         body: JSON.stringify(newJson),
         headers: {
             'dataType' : 'json',
-            'content-type' : 'application/json'
+            'content-type' : 'application/json',
+            'authorization' : 'Bearer ${token}'
         },
         method: 'POST',
         redirect: 'follow'
