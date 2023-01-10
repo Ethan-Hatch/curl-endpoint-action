@@ -11,5 +11,5 @@ outputs:
   endpoint-data: # the finalized product
     description: 'This should match what was sent to the webhook endpoint'
 runs:
-  using: 'node18'
+  using: 'node16'
   main: 'index.js'
